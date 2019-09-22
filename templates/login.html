@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+
+        label{
+
+            width: 80px;
+            text-align: right;
+            display: inline-block;
+
+        }
+    </style>
+</head>
+<body>
+
+    <form action="login" method="post" style="background-color: cadetblue">
+        <p>
+            <label for="username">用户名</label>
+            <input id="username" name="user" type="text"/>
+        </p>
+        <p>
+            <label for="password">密码</label>
+            <input id="password" name="pwd" type="text"/>
+            <input type="submit" value="提交">
+
+      <!--error_msg 替换请求 相同字段文字
+            <span style="color: red">{{ error_msg}}</span>
+        </p>
+    </form>
+</body>
+</html>

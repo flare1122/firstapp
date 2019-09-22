@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Information</title>
+    <link href="/static/myapp/css/style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <h1>Grades List</h1>
+    <ul>
+        {% for gra in grade %}
+        <Li>
+            <a href="{{ gra.id }}">{{ gra.name }}</a>
+        </Li>
+        {% endfor %}
+
+    </ul>
+
+   <form action="../login/" method="post" style="background-color: cadetblue">{% csrf_token %}
+        <p>
+            <label for="username">用户名</label>
+            <input id="username" name="user" type="text"/>
+        </p>
+        <p>
+            <label for="password">密码</label>
+            <input id="password" name="pwd" type="text"/>
+            <input type="submit" value="提交">
+
+
+</body>
+</html>
